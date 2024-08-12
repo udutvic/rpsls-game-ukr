@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Камінь Ножиці Папір Ящірка Спок</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <header class="scoreboard"> 
+          <div class="title">
+              <img src="/assets/logo-bonus.svg" alt="Game title" />
+          </div>
+          <div class="score">
+              <p>РАХУНОК</p>
+              <h1>0</h1>
+          </div>
+      </header>
+      <main>
+        <section class="hands">
+          <div class="hand spock">
+            <img src="/assets/icon-spock.svg" alt="Spock hand" onclick="pickUserHand('spock')"/>
+          </div>
+          <div class="hand scissors">
+            <img src="/assets/icon-scissors.svg" alt="Scissors hand" onclick="pickUserHand('scissors')"/>
+          </div>
+            <div class="hand paper">
+              <img src="/assets/icon-paper.svg" alt="Paper hand" onclick="pickUserHand('paper')"/>
+            </div>
+            <div class="hand lizard">
+              <img src="/assets/icon-lizard.svg" alt="Lizard hand" onclick="pickUserHand('lizard')"/>
+            </div>
+            <div class="hand rock">
+              <img src="/assets/icon-rock.svg" alt="Rock hand" onclick="pickUserHand('rock')"/>                        
+            </div>
+        </section>
+        <section class="contest">       
+          <div class="userhand">
+              <h1>ВАШ ВИБІР</h1>
+              <div class="handImageContainer">
+                <img id="userPickImage" src="/assets/icon-paper.svg" alt="User's pick">
+              </div>
+          </div>
+          <div class="referee"> 
+              <div class="decision"><h1>ВИ ПЕРЕМОГЛИ!</h1></div>
+              <button class="newGame" onclick="restartGame()">ГРАТИ ЩЕ</button>
+          </div>
+          <div class="computerhand">
+              <h1>ВИБІР КОМП'ЮТЕРА</h1>
+              <div class="handImageContainer">
+                <img id="computerPickImage" src="/assets/icon-paper.svg" alt="Computer's pick"/> 
+              </div>   
+          </div>       
+        </section>  
+      </main>      
+      <footer class="site-footer">
+        <button class="btn-reset">Обнулити</button>
+        <button class="btn-rules">Правила</button>
+        <div class="rules-modal">
+          <div class="rules-modal__content">
+            <img class="rules-modal__content--rules" src="/assets/rules.svg" alt="Game Rules Title">
+            <img class="rules-modal__content--close" src="/assets/icon-close.svg" alt="Games Rules Close">
+            <img class="rules-modal__content--img" src="/assets/image-rules-bonus.svg" alt="Game Rules">
+          </div>
+        </div>
+        <p class="attribution">Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank">Frontend Mentor</a>.
+          Coded by <a class="attribution__link" href="https://github.com/udutvic" target="_blank">Udut Viktor</a>.</p>
+      </footer>
+    </section>
+    <script src="/js/script.js"></script>    
+  </body>
+</html>
