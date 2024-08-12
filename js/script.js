@@ -1,10 +1,10 @@
 //NOTE - Об'єкт з зображеннями для кожного варіанту
 const handOptions = {
-  rock: "/assets/icon-rock.svg",
-  paper: "/assets/icon-paper.svg",
-  scissors: "/assets/icon-scissors.svg",
-  lizard: "/assets/icon-lizard.svg",
-  spock: "/assets/icon-spock.svg",
+  rock: "./assets/icon-rock.svg",
+  paper: "./assets/icon-paper.svg",
+  scissors: "./assets/icon-scissors.svg",
+  lizard: "./assets/icon-lizard.svg",
+  spock: "./assets/icon-spock.svg",
 };
 
 //NOTE - Початкове значення рахунку
